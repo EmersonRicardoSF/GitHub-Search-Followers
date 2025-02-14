@@ -28,7 +28,7 @@ class SearchViewController: UIViewController {
     }
     
     func configNavigation() {
-        self.title = "SEARCH"
+        self.title = "GitHub Search Followers!"
     }
     
     @objc func searchUser() {

@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchView: UIView {
-
+    
     var logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
@@ -84,9 +84,9 @@ class SearchView: UIView {
             logoImageView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),
             
             usernameTextField.heightAnchor.constraint(equalToConstant: 40),
-            usernameTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
-            usernameTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
+            usernameTextField.widthAnchor.constraint(equalToConstant: 300),
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 10),
+            usernameTextField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             
             searchButton.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 40),
             searchButton.centerXAnchor.constraint(equalTo: centerXAnchor),
